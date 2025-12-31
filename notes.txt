@@ -1,0 +1,35 @@
+what is dom ?
+Doucment object model 
+
+The DOM is  a tree likew structure  created by the browser from html
+
+
+                         html 
+                         /   \
+                              \
+                        /
+                      head
+                      /   \     \
+                     meta  link  title
+
+
+it allows jvascript to read ,modify,add,delete,changes to html css
+
+Html=structure 
+css=style
+DOM=
+bridge between html $javaScript 
+which add's function to your website 
+
+
+DOM is an application programing Interface (API) for manipulating Html Doucment
+
+
+when a web pages gets loads the browser creates a DOM tree structure for  it which is also known as dom tree 
+
+in DOM tree the Doucment is an root node of it 
+
+open your browser  aand open console of it  using f12 or inspect
+
+DOM Methods 
+1.getElementById()
