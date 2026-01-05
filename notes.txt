@@ -33,3 +33,18 @@ open your browser  aand open console of it  using f12 or inspect
 
 DOM Methods 
 1.getElementById()
+
+
+
+------------------------------------------------
+
+DOM events are actions that occur as a result of user action or as result of change the element of a DOM tree 
+DOM events are->
+
+1.When a user clicks the mouse 
+2. When a web pag is laoded
+3. When a image is laoded
+4.When mouse overs an element
+5. When an input field is changed 
+6. When a HTML form is submitted 
+7. When a user stokes a key

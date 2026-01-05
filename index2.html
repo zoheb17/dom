@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="http://google.com" id="a">click me</a> -->
+
+    <form id="from">
+        <label>Email
+
+        </label>
+        <br>
+        <input type="email"><br>
+        <label>
+            Password
+        </label>
+        <br>
+        <input type="password"><br><br>
+        <button type="submit">login</button>
+    </form>
+    <script>
+      let from =document.getElementById("from") 
+      from.addEventListener("submit",(a)=>{
+        a.preventDefault();
+        console.log("hello");
+      })
+
+
+    </script>
+</body>
+</html>

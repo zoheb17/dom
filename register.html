@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+<!-- <script src="./script.js"></script> -->
+</head>
+<body class="flex h-screen items-center justify-center font-Arial bg-[#f4f4f4] ">
+    <form id="form" class="bg-[#fff] p-[25px] w-[300px] rounded-[8px] shadow-lg">
+        <h1 class="text-center mb-[20px] font-bold">  Registeration Form</h1>
+
+         <label>
+            FullName:
+        </label>
+        <input class="border rounded-[3px] w-full p-[5px] mb-[12px]" type="text" id="Name" placeholder="Enter your Name">
+        <label>
+            Email:
+        </label>
+        <input class="border rounded-[3px] w-full p-[5px] mb-[12px]" type="email" id="email" placeholder="Enter your email">
+        <br>
+        <label>
+            Password:
+        </label>
+        <input type="password" class="border rounded-[3px] w-full p-[5px] mb-[12px]" id="password" class="border rounded-[3px]" placeholder="Enter your password">
+        <br>
+        <label>
+         Phone
+        </label>
+        <input  id="phone" class="border rounded-[3px] w-full p-[5px] mb-[12px]" type="text" placeholder="Enter your phone number ">
+      
+
+    <label for="gender" class="block mb-2 text-sm font-medium text-gray-700">
+  Gender:
+</label>
+
+<select
+  id="gender"
+  name="gender"
+  class="block w-full max-w-xs rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-70"
+>
+  <option value="">-- Select Gender --</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+</select>
+
+</select><br>
+  <button  type="submit" class="border s rounded-[4px] bg-[#007bff] text-white w-full p-[5px] mb-[12px]">Register</button>
+    </form>
+    <script>
+        let form =document.getElementById("form");
+        form.addEventListener("submit",(event)=>{
+            window.location="http:/login.html"
+            event.preventDefault();
+
+            let email=document.getElementById("email").value 
+            let password=document.getElementById("password").value
+            let phone=document.getElementById("phone").value
+            let  name=document.getElementById("Name").value
+
+            let gender=document.getElementById("gender").value
+            console.log(email,password,phone,gender);
+            let userObject={
+                email,
+                password,
+                phone,
+                gender
+            };
+            console.log(userObject);
+            
+        })
+    // </script>
+</body>
+</html>
